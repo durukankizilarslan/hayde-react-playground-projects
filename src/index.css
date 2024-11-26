@@ -1,0 +1,91 @@
+body {
+  padding: 0;
+  margin: 0;
+  min-height: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.card1 {
+  border: 1px solid black;
+}
+
+.student-card {
+  border: 1px solid black;
+  border-radius: 5px;
+  box-sizing: border-box;
+  padding: 5px;
+}
+
+.student-card p {
+  margin: 5px 0;
+}
+
+.welcome-message {
+  color: green;
+}
+
+.login-prompt {
+  color: red;
+}
+
+.layout-container {
+  min-height: 100vh;
+}
+
+.layout-sidebar {
+  transition: 0.2s;
+  position: fixed;
+  height: 100%;
+  top: 0;
+  left: 0;
+  width: 18rem;
+}
+
+.layout-content-wrapper {
+  box-sizing: border-box;
+  transition-duration: 0.2s;
+  background-color: #eef2f8;
+}
+
+.layout-content-wrapper-sidebar-open {
+
+  margin-left: 18rem;
+}
+
+.layout-content-wrapper-sidebar-closed {
+  margin-left: 0;
+}
+
+.sidebar-logo-wrapper {
+  max-height: 150px;
+
+  box-sizing: border-box;
+}
+
+.sidebar-logo-wrapper img {
+  max-height: inherit;
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+}
+
+.sidebar-open {
+}
+
+.sidebar-closed {
+  transform: translateX(-100%);
+  display: none;
+}
